@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  strengths: MyText
+  weaknesses: MyText
+  compatible_with: MyString
+  not_compatible: MyString
+  symbol: MyString
+
+two:
+  name: MyString
+  strengths: MyText
+  weaknesses: MyText
+  compatible_with: MyString
+  not_compatible: MyString
+  symbol: MyString

@@ -1,0 +1,2 @@
+module ZodiacSignHelper
+end
