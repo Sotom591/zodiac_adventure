@@ -1,1 +1,13 @@
 <h1>Understand Your Love Story</h1>
+
+
+
+
+
+
+
+<%= form_tag madlibs_path, method: "POST" do %>
+<%= label_tag :noun %>
+<%= text_field_tag :noun %>
+<%= submit_tag %>
+<% end %>
