@@ -6,5 +6,7 @@ class ZodiacSignsController < ApplicationController
   def show
     @zodiac_sign = ZodiacSign.find(params[:id])
   end
-  
+
+
+
 end

@@ -1,14 +1,14 @@
-<h1> <%= @zodiac_sign.name %> </h1>
+
 <%= image_tag "#{@zodiac_sign.symbol_url}" %>
 <div>
-  <h2> Your strengths: </h2>
+  <h2> Your Strengths: </h2>
   <h3> <%= @zodiac_sign.strengths %> </h3>
-  <h2> Your weaknesses: </h2>
+  <h2> Your Weaknesses: </h2>
   <h3> <%= @zodiac_sign.weaknesses %> </h3>
-  <h2> Match up with: </h2>
+  <h2> Match Up With: </h2>
   <h3> <%= @zodiac_sign.compatible_with %> </h3>
-  <h2> Avoid: </h2>
+  <h2> Maybe You Should Avoid: </h2>
   <h3> <%= @zodiac_sign.not_compatible %> </h3>
 </div>
 
-<%= link_to 'Zodiac Index Page', zodiac_sign_path %>
+<%= link_to 'Zodiac Index Page', zodiac_signs_path %>

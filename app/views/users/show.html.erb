@@ -1,8 +1,8 @@
-<h1>Welcome <%= @user.user_name %>! </h1>
+<h1>Welcome <%= @user.first_name %>! </h1>
 <h2>
-Your Info <br>
+Your Info <br><br>
 Name: <%= @user.name %> <br>
 Username: <%= @user.user_name %> <br>
-Email: <% @user.email %> <br>
-Zodiac Sign: <% link_to @user.zodiac_sign.name, zodiac_sign_path(@user.zodiac_sign)%>
+Email: <%= @user.email %> <br>
+Zodiac Sign: <%= link_to @user.zodiac_sign.name, zodiac_sign_path(@user.zodiac_sign)%>
 </h2>
