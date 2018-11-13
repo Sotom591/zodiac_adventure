@@ -1,10 +1,9 @@
 class SessionsController < ApplicationController
 
   def new
-
   end
 
-  def create
+  def create #login user
     @user = User.find_by(user_name: params[:user_name])
     if @user
       session[:user_id] = @user.id
@@ -14,7 +13,7 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destroy
+  def destroy #logout user
     session.clear
     redirect_to login_path
   end

@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2018_11_12_183418) do
 
   create_table "madlibs", force: :cascade do |t|
-    t.integer "zodiac_sign_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

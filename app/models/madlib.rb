@@ -1,3 +1,3 @@
 class Madlib < ApplicationRecord
-  belongs_to :zodiac_sign
+  belongs_to :user
 end
