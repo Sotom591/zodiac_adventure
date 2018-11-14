@@ -1,5 +1,6 @@
-
-<p>Ah, <%= "#{@madlib.user.first_name}" %>, so you're a <%="#{@madlib.user.zodiac_sign_id}" %></p>
+<h1>Here's Your Prediction...</h1>
 <p>
-<%= @madlib.content %>
+Ah, <%= "#{@madlib.user.first_name}" %>, so you're a <%="#{@madlib.zodiac_sign.name}" %>.
+<%= @madlib.content %> They're always trouble for <%="#{@madlib.zodiac_sign.name}" %>!
+
 </p>
