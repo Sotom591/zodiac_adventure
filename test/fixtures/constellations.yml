@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  zodiac_id: 1
+  description: MyText
+  sky_url: MyString
+
+two:
+  zodiac_id: 1
+  description: MyText
+  sky_url: MyString

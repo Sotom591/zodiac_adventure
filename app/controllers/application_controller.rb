@@ -11,5 +11,6 @@ helper_method :get_current_user
       end
     end
   end
+  # refer to login lecture/session and cookies
 
 end
