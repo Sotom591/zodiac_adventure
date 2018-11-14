@@ -1,6 +1,6 @@
 class Madlib < ApplicationRecord
   belongs_to :user
-
+  has_one :zodiac_sign, through: :user
 
 
   def prediction(words)
@@ -18,4 +18,6 @@ If you like what you see, it can be hard for you not to begin #{verb_ing.downcas
 
 Remember, it is better for you to consider dating #{adj.downcase} types of people. In the past, you only dated #{job.downcase}’s. It’s time to branch out as it will lead you to #{adj2.downcase} love. Oh, and watch out for #{randname.downcase}s’."
   end
+
+
 end

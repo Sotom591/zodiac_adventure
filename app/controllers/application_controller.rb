@@ -11,7 +11,10 @@ helper_method :get_current_user
       end
     end
   end
-  def find_current_user
+
+  def find_current_user #for madlib/user connection
     @user_found = User.find_by(id: session[:user_id])
   end
+
+
 end
