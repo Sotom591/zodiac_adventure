@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :new, :create]
   resources :zodiac_signs, only: [:index, :show]
   resources :madlibs, only: [:index, :new, :create, :show]
+  resources :constellations, only: [:index, :show]
 end

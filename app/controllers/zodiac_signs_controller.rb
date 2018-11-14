@@ -1,4 +1,4 @@
-class ZodiacSignsController < ApplicationController
+ class ZodiacSignsController < ApplicationController
   def index
     @zodiac_signs = ZodiacSign.all
   end

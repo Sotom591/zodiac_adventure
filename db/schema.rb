@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2018_11_14_144216) do
 
   create_table "constellations", force: :cascade do |t|
-    t.integer "zodiac_id"
+    t.integer "zodiac_sign_id"
     t.text "description"
     t.string "sky_url"
     t.datetime "created_at", null: false
