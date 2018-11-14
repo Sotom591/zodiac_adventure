@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :users, only: [:index, :show, :new, :create]
+  get "/login", to: "sessions#new"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+  # get "/prediction", to: "madlib#new"
+
+  resources :users, only: [:show, :new, :create]
   resources :zodiac_signs, only: [:index, :show]
-  resources :madlibs, only: [:new]
+  resources :madlibs, only: [:index, :new, :create, :show]
 end
