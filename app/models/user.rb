@@ -8,4 +8,10 @@ class User < ApplicationRecord
     "#{self.first_name}" + " #{self.last_name}"
   end
 
+  def lucky_num
+    n = 5.times.map { rand(1..99) }
+    n.join(", ")
+  end
+
+
 end

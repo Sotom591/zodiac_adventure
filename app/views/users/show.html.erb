@@ -4,5 +4,6 @@ Your Info <br><br>
 Name: <%= @user.name %> <br>
 Username: <%= @user.user_name %> <br>
 Email: <%= @user.email %> <br>
-Zodiac Sign: <%= link_to @user.zodiac_sign.name, zodiac_sign_path(@user.zodiac_sign)%>
+Zodiac Sign: <%= link_to @user.zodiac_sign.name, zodiac_sign_path(@user.zodiac_sign)%> <br>
+Get Your Lucky Numbers: <%= @user.lucky_num %>
 </h2>

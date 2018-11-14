@@ -5,11 +5,19 @@ class MadlibsController < ApplicationController
   end
 
   def create
-    byebug
-    @mln = param[:noun]
+    @madlib = Madlib.new
+    @madlib.prediction
+
+
+
+    render :show
   end
 
   def show
-    @madlib
+    @madlib = Madlib.find(params[:id])
+  end
+private
+  def madlib_params(*args)
+    params.require(:madlib).permit(*args)
   end
 end

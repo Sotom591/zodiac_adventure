@@ -7,7 +7,19 @@
 
 
 <%= form_tag madlibs_path, method: "POST" do %>
-<%= label_tag :noun %>
-<%= text_field_tag :noun %>
+<%= label_tag :body_part %>
+<%= text_field_tag :body_part %>
+<%= label_tag :verb_ing %>
+<%= text_field_tag :verb_ing %>
+<%= label_tag :anim %>
+<%= text_field_tag :anim %>
+<%= label_tag :adj %>
+<%= text_field_tag :adj %>
+<%= label_tag :job %>
+<%= text_field_tag :job %>
+<%= label_tag :adj2 %>
+<%= text_field_tag :adj2 %>
+<%= label_tag :randname %>
+<%= text_field_tag :randname %>
 <%= submit_tag %>
 <% end %>
