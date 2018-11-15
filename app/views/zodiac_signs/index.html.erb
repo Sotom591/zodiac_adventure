@@ -1,6 +1,6 @@
 <h1>Zodiac Signs</h1>
 <ul>
   <% @zodiac_signs.each do |zodiac_sign| %>
-  <li> <%= link_to zodiac_sign.name, zodiac_sign_path(zodiac_sign)%> </li>
+   <%= link_to zodiac_sign.name, zodiac_sign_path(zodiac_sign)%>
   <% end %>
 </ul>
