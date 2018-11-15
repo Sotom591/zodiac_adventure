@@ -17,14 +17,15 @@ libra = ZodiacSign.create(name: "Libra", strengths: "Charming, Harmonious, Diplo
 scorpio = ZodiacSign.create(name: "Scorpio", strengths: "Passionate, Driven, Perceptive, Emotional, Sacrificing, Determined", weaknesses: "Vindictive, Paranoid, Destructive, Possessive, Jealous, Clingy", compatible_with: "Scorpio, Pisces", not_compatible: "Aries, Leo", symbol_url: "http://www.printableparadise.com/zodiac/printable-scorpio-zodiac-sign.png")
 sagittarius = ZodiacSign.create(name: "Sagittarius", strengths: "Ambitious, Lucky, Moral, Optimistic, Enthusiastic, Open-minded, Versatile", weaknesses: "Gluttonous, Lazy, Restless, Irresponsible, Blindly Optimistic, Tactless", compatible_with: "Leo, Aries, Aquarius, Libra", not_compatible: "Virgo", symbol_url: "http://www.printableparadise.com/zodiac/printable-sagittarius-zodiac-sign.png")
 
-
-
-15.times do
-	User.create(
-		first_name: Faker::Name.first_name,
-		last_name: Faker::Name.last_name,
-		user_name: Faker::Internet.username,
-		email: Faker::Internet.email,
-		zodiac_sign_id: rand(1..12)
-        )
-end
+user1 = User.create(first_name: "Marissa", last_name: "Love", user_name: "MLove7", email: "MLove7@yahoo.com", zodiac_sign_id: 5, password: "pw")
+# 
+# 15.times do
+# 	User.create(
+# 		first_name: Faker::Name.first_name,
+# 		last_name: Faker::Name.last_name,
+# 		user_name: Faker::Internet.username,
+# 		email: Faker::Internet.email,
+# 		zodiac_sign_id: rand(1..12),
+# 		password: "pw"
+#         )
+# end

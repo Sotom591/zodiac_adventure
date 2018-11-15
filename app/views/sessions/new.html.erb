@@ -4,7 +4,11 @@
 <%= form_tag "/login" do %>
   <%= label :user_name, "Username" %>
   <%= text_field_tag :user_name %>
+  <%= label :password, "Password" %>
+  <%= password_field_tag :password %>
   <%= submit_tag "Login" %>
 <% end %>
 
-<p>or <%= link_to "Create A New User", new_user_path %></p>
+
+or <%= link_to "Create A New User", new_user_path %>
+
