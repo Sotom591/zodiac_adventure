@@ -12,17 +12,18 @@
 
     <div>
       <ul>
+
+
         <div class="ui menu">
   <a class="item" href="/">Home</a>
   <div class="right menu">
     <a class="item" href="/constellations">Constellations</a>
     <a class="item" href="/madlibs/new">Predictions</a>
     <% if session[:user_id] %>
-    <!-- Welcome <%= get_current_user %> -->
     <%= link_to "Account", user_path(session[:user_id]), {class: "item"} %>
-    <%= link_to "Logout", logout_path, method: "DELETE" %>
+    <%= link_to "Logout", logout_path, {method: "DELETE", class: "item"} %>
     <% else %>
-    <%= link_to "Login", login_path %>
+    <%= link_to "Login", login_path, {class: "item"}%>
     <% end %>
   </div>
 </div>
