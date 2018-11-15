@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2018_11_14_144216) do
+ActiveRecord::Schema.define(version: 2018_11_14_225533) do
 
   create_table "constellations", force: :cascade do |t|
     t.integer "zodiac_sign_id"
@@ -20,7 +19,6 @@ ActiveRecord::Schema.define(version: 2018_11_14_144216) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
 
   create_table "madlibs", force: :cascade do |t|
     t.integer "user_id"

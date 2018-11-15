@@ -1,17 +1,3 @@
 <h1>Create A New User</h1>
  <%= render partial: "shared/errors", locals: {new_object: @user} %>
-<%= form_for @user do |f| %>
-<%= f.label :first_name %>
-<%= f.text_field :first_name %> <br>
-<%= f.label :last_name %>
-<%= f.text_field :last_name %> <br>
-<%= f.label :user_name %>
-<%= f.text_field :user_name %> <br>
-<%= f.label :password %>
-<%= f.password_field :password %> <br>
-<%= f.label :email %>
-<%= f.text_field :email %> <br>
-<%= f.label :zodiac_sign %>
-<%= f.collection_select :zodiac_sign_id, ZodiacSign.all, :id, :name %> <br>
-<%= f.submit %>
-<% end %>
+<%= render partial: "form", locals: {submit_text: "Create New User"} %>

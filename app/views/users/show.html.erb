@@ -1,3 +1,6 @@
+
+
+
 <h1>Welcome <%= @user.first_name %>! </h1>
 <h2>
 Your Info <br><br>
@@ -5,8 +8,11 @@ Name: <%= @user.name %> <br>
 Username: <%= @user.user_name %> <br>
 Email: <%= @user.email %> <br>
 Zodiac Sign: <%= link_to @user.zodiac_sign.name, zodiac_sign_path(@user.zodiac_sign)%> <br>
-Get Your Lucky Numbers: <%= @user.lucky_num %>
+Your Lucky Numbers: <%= @user.lucky_num %>
 </h2>
 
 <h3><%= link_to "Try Our Relationship Predictor", new_madlib_path(@madlib) %></h3>
 <h3><%= link_to "View Other Zodiac Signs", zodiac_signs_path %></h3>
+<% if current_user == @user %>
+<%= link_to "Edit User", edit_user_path %>
+<% end %>

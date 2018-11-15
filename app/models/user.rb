@@ -14,7 +14,7 @@ class User < ApplicationRecord
     n.join(", ")
   end
 
-  
+
 
 
 
