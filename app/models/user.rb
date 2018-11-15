@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   belongs_to :zodiac_sign
   has_many :madlibs
+  has_secure_password
   validates :user_name, uniqueness: true
 
 
@@ -14,6 +15,8 @@ class User < ApplicationRecord
   end
 
   
+
+
 
 
 end

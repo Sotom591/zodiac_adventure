@@ -1,14 +1,6 @@
-<h2>This is a noun: <%= @mln %> </h2>
-
+<h1>Here's Your Prediction...</h1>
 <p>
-Ah,  so you’re a @user.zodiac_sign.name.
-It is all so clear now. When you first meet someone new, you look at their <%= @mlb %>
-If you like what you see, it can be hard for you not to begin <%= @mlv %>.
-But it’s important instead to introduce yourself by your name.
-Later into your relationship though you can ask your sweetheart to call you by your favorite pet name, <%= @ba %>.
+Ah, <%= "#{@madlib.user.first_name}" %>, so you're a <%="#{@madlib.zodiac_sign.name}" %>.
+<%= @madlib.content %> They're always trouble for <%="#{@madlib.zodiac_sign.name}" %>!
 
-Remember, it is better for you to consider dating <% @adj %> types of people. I
-n the past, you only dated <%= @up %>’s.
-It’s time to branch out as it will lead you to <%= @adj2 %> love.
-Oh, and watch out for <%= @pn %>s'. They’re always trouble for @user.zodiac_sign.name.
 </p>
