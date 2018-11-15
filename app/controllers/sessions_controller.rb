@@ -5,10 +5,10 @@ class SessionsController < ApplicationController
 
   def create #login user
     @user = User.find_by(user_name: params[:user_name])
-    if @user
+    if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
       redirect_to user_path(@user)
-    else flash.notice = "No user with that name"
+    else flash.notice = "No user with that name/password combination"
       render :new
     end
   end
