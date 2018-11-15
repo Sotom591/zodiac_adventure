@@ -13,6 +13,19 @@
  *= require_tree .
  *= require_self
  */
+header {
+    font-family: 'Courgette', cursive;
+    text-align: left;
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: purple;
+}
+
  body {
   text-align: center;
+  font-family: 'Courgette', cursive;
+  background-color: #c9ddff;
 }

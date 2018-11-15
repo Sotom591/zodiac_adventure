@@ -38,7 +38,7 @@ cap = Constellation.create(zodiac_sign_id: 1, description: "Capricornus has been
   god Pan. Pan, fleeing a monster called Typhon, jumed into the river Nile. The
   part of him that was below water turned into a fish, while the rest of him
   above water, stayed as a goat.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/CapricornusCC.jpg/256px-CapricornusCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3e018d50867969.58dbbd2412624.jpg")
 
 aqu = Constellation.create(zodiac_sign_id: 2, description: "Aquarius is a rather
   faint constellation which would not be famous if it weren’t part of the Zodiac.
@@ -46,7 +46,7 @@ aqu = Constellation.create(zodiac_sign_id: 2, description: "Aquarius is a rather
   cultures, it is drawn as a man pouring water from a bucket.
   This may arise from the fact that the Sun enters Aquarius in early winter when
   the rainy season begins in many parts of the world.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/AquariusCC.jpg/256px-AquariusCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9072fe50867969.58dbbd24171f8.jpg")
 
 pis = Constellation.create(zodiac_sign_id: 3, description: "Pisces constellation
   is of Babylonian origin. The Babylonians saw it as a pair of fish joined by a
@@ -54,7 +54,7 @@ pis = Constellation.create(zodiac_sign_id: 3, description: "Pisces constellation
   Cupid, who tied themselves with a rope and transformed into fish to escape the
   monster Typhon. The star Alpha Piscium, also known by the traditional name Alrescha
   (“the cord” in Arabic) marks the knot of the rope.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/PiscesCC.jpg/256px-PiscesCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/003a4950867969.58dbbd2419c95.jpg")
 
 ari = Constellation.create(zodiac_sign_id: 4, description: "The Babylonians, the
   Egyptians, the Greeks and the Persians all agreed on this constellaton’s name
@@ -67,7 +67,7 @@ ari = Constellation.create(zodiac_sign_id: 4, description: "The Babylonians, the
   Black Sea where he sacrificed the ram and gave its fleece to a sleepless dragon
   for safe-keeping. Later, Jason and his intrepid Argonauts recovered the prized
     fleece and returned it to Thessaly.",
-    sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/AriesCC.jpg/256px-AriesCC.jpg")
+    sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9b63aa50867969.58dbbd24159f2.jpg")
 
 tau = Constellation.create(zodiac_sign_id: 5, description: "Taurus is one of the
   many animals hunted by Orion, the Hunter. The Greeks saw Taurus as Zeus in disguise.
@@ -85,12 +85,12 @@ tau = Constellation.create(zodiac_sign_id: 5, description: "Taurus is one of the
   be a man with a bull’s head that could breathe fire. The Egyptians saw the
   constellation instead as their god Osiris while the Chinese caled it alternatively
   the “White Tiger” or the “Great Bridge.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TaurusCC.jpg/256px-TaurusCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/32120750867969.58dbbd2418cd1.jpg")
 
 gem = Constellation.create(zodiac_sign_id: 6, description: "Castor and Pollux, the
   “twins” of Gemini, were Greek heroes. They were among the men Jason led on his
   voyages on the Argo.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/GeminiCC.jpg/280px-GeminiCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7fb65450867969.58dbbd2419235.jpg")
 
 can = Constellation.create(zodiac_sign_id: 7, description: " Cancer, the Crab,
   plays a minor role in the Twelve Labors of Hercules. While Hercules was busy
@@ -112,7 +112,7 @@ le = Constellation.create(zodiac_sign_id: 8, description: "Leo is the Nemean Lio
     Leo in the sky by looking for the “sickle” starting at Regulus (Alpha Leonis)
     and following the backwards question mark. To find Regulus, use the Big Dipper
     as described on the Ursa Major Page.",
-    sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/LeoCC.jpg/256px-LeoCC.jpg")
+    sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c7785750867969.58dbbd2414e43.jpg")
 
 vir = Constellation.create(zodiac_sign_id: 9, description: "Virgo constellation
   lies in the southern sky. Its name means “virgin” in Latin. Virgo is one of the
@@ -122,18 +122,18 @@ vir = Constellation.create(zodiac_sign_id: 9, description: "Virgo constellation
   This is one of the two points in the sky (the other being in the constellation
   Pisces) where the celestial equator intersects with the ecliptic. Virgo is the
   second largest constellation in the sky. The only constellation larger in size is Hydra.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/VirgoCC.jpg/256px-VirgoCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3be42e50867969.58dbbd24135e6.jpg")
 
 lib = Constellation.create(zodiac_sign_id: 10, description: "The constellation’s
   name means “the weighing scales” in Latin, and Libra is usually depicted as the
   scales held by the Greek goddess of justice Dike (or Astraea), represented by
   the neighbouring Virgo constellation. Libra is the only zodiac constellation
   that represents an object, not an animal or a character from mythology.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/LibraCC.jpg/256px-LibraCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8d3feb50867969.58dbbd2413f9a.jpg")
 
 sco = Constellation.create(zodiac_sign_id: 11, description: " Scorpius is the beast
   which finally killed the Great Hunter, Orion.",
-  sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ScorpiusCC.jpg/256px-ScorpiusCC.jpg")
+  sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/00bc0450867969.58dbbd2413b1a.jpg")
 
 sag = Constellation.create(zodiac_sign_id: 12, description: "The center of our
   galaxy, the Milky Way, lies in the direction of Sagittarius. It is believed
@@ -141,4 +141,4 @@ sag = Constellation.create(zodiac_sign_id: 12, description: "The center of our
   Way once every 200 million years at a speed of 220 kilometers per second! What
   is at the center of the galaxy? No one really knows yet, but it appears that
   there might be a giant black hole there with a mass about a million times greater
-  that the Sun", sky_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/SagittariusCC.jpg/250px-SagittariusCC.jpg")
+  that the Sun", sky_url: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7717b450867969.58dbbd2416ac6.jpg")

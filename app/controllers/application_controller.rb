@@ -24,15 +24,16 @@ helper_method :get_current_user, :find_current_user, :current_user
   end
 
   def authorized
-    redirect_to zodiac_signs_path unless get_current_user
-  end
-
-  def authorized_for_user(user)
-    authorized
-    if current_user != user
-      redirect_to current_user
+      redirect_to login_path unless logged_in?
     end
-  end
+
+    def authorized_for_user(user)
+      if authorized
+        return
+      elsif current_user != user
+        redirect_to users_path
+      end
+    end
 
   def bad_route_redirect
     redirect_to zodiac_signs_path

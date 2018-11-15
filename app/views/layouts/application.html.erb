@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ZodiacAdventure</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="semantic/dist/semantic.min.js"></script>
+
+
+
+    <div>
+      <ul>
+        <div class="ui menu">
+  <a class="item" href="/">Home</a>
+  <div class="right menu">
+    <a class="item" href="/constellations">Constellations</a>
+    <a class="item" href="/madlibs/new">Predictions</a>
+    <% if session[:user_id] %>
+    <!-- Welcome <%= get_current_user %> -->
+    <%= link_to "Account", user_path(session[:user_id]), {class: "item"} %>
+    <%= link_to "Logout", logout_path, method: "DELETE" %>
+    <% else %>
+    <%= link_to "Login", login_path %>
+    <% end %>
+  </div>
+</div>
+
   </head>
 
   <body>
 
-    <div class="ui inverted menu">
-      <a class="active item">
-        Home
-      </a>
-      <a class="Constellations">
-        Constellations
-      </a>
-      <a class="Predictions">
-        Predictions
-      </a>
-    </div>
 
-    <div>
-      <% if session[:user_id] %>
-  <h3>  Welcome <%= get_current_user %>  </h3>
-      <%= link_to "Logout", logout_path, method: "DELETE" %>
-      <% else %>
-      <%= link_to "Login", login_path %>
-      <% end %>
-
-    </div>
     <%= yield %>
   </body>
 </html>
