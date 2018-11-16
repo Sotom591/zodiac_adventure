@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD
 body {
   background-color: #c9ddff;
 }
@@ -29,4 +30,20 @@ p {
   font-size: 15px;
   text-align: center;
   color: teal;
+=======
+   
+ body {
+  text-align: center;
+  background-color: #e8ebf9;
+>>>>>>> 56a5fe21bc18382ed3b82616fa54ee7fa6e584b7
 }
+
+
+ a, h1 {
+ 	font-family: 'Spicy Rice', cursive;
+ 	font-weight: bold;
+ 	text-shadow: 2px 2px color:black;
+ }
+
+
+

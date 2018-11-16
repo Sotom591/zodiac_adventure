@@ -4,7 +4,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+=======
+     <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+>>>>>>> 56a5fe21bc18382ed3b82616fa54ee7fa6e584b7
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -12,7 +16,9 @@
 
 
   <body>
+   
 
+<<<<<<< HEAD
 
 
     <div class="ui inverted six item menu">
@@ -31,6 +37,30 @@
 
   </div>
 
+=======
+    <div class="ui inverted menu">
+      <a class="active item">
+        Home
+      </a>
+      <a class="Constellations">
+        Constellations
+      </a>
+      <a class="Predictions">
+        Predictions
+      </a>
+     </div>
+    
+
+    <div>
+      <% if session[:user_id] %>
+  <h3>  Welcome <%= get_current_user %>  </h3>
+      <%= link_to "Logout", logout_path, method: "DELETE" %>
+      <% else %>
+      <%= link_to "Login", login_path %>
+      <% end %>
+
+    </div>
+>>>>>>> 56a5fe21bc18382ed3b82616fa54ee7fa6e584b7
     <%= yield %>
   </body>
 </html>
