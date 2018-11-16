@@ -1,18 +1,22 @@
 
+<body class="user-show">
 
 
-<h1>Welcome <%= @user.first_name %>! </h1>
-<h2>
-Your Info <br><br>
+
+<h1 class="user-show">Welcome <%= @user.first_name %>! </h1>
+<h2 class="user-show">
+<h2 class="account-i"> Account Info </h2>
+<div class="user-show">
 Name: <%= @user.name %> <br>
 Username: <%= @user.user_name %> <br>
 Email: <%= @user.email %> <br>
 Zodiac Sign: <%= link_to @user.zodiac_sign.name, zodiac_sign_path(@user.zodiac_sign)%> <br>
 Your Lucky Numbers: <%= @user.lucky_num %>
-</h2>
+</div>
 
-<h3><%= link_to "Try Our Relationship Predictor", new_madlib_path(@madlib) %></h3>
-<h3><%= link_to "View Other Zodiac Signs", zodiac_signs_path %></h3>
+<h3 class="user-show"><%= link_to "Try Our Relationship Predictor", new_madlib_path(@madlib) %></h3>
+<h3 class="user-show"><%= link_to "View Other Zodiac Signs", zodiac_signs_path %></h3>
 <% if current_user == @user %>
-<%= link_to "Edit User", edit_user_path %>
+<%= link_to "Edit Your Info", edit_user_path, {class: "edit-link"} %>
 <% end %>
+</body>

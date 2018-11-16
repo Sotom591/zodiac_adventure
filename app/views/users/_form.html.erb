@@ -1,15 +1,21 @@
-<%= form_for @user do |f| %>
-<%= f.label :first_name %>
-<%= f.text_field :first_name %> <br>
-<%= f.label :last_name %>
-<%= f.text_field :last_name %> <br>
-<%= f.label :user_name %>
-<%= f.text_field :user_name %> <br>
-<%= f.label :password %>
-<%= f.password_field :password %> <br>
-<%= f.label :email %>
-<%= f.text_field :email %> <br>
-<%= f.label :zodiac_sign %>
-<%= f.collection_select :zodiac_sign_id, ZodiacSign.all, :id, :name %> <br>
-<%= f.submit submit_text %>
-<% end %>
+<body class="body-user-form">
+  <div class="user-form">
+
+
+  <%= form_for @user do |f| %>
+  <%= f.label :first_name, "First Name: " %>
+  <%= f.text_field :first_name %> <br>
+  <%= f.label :last_name, "Last Name: " %>
+  <%= f.text_field :last_name %> <br>
+  <%= f.label :user_name, "Username: " %>
+  <%= f.text_field :user_name %> <br>
+  <%= f.label :password, "Password: " %>
+  <%= f.password_field :password %> <br>
+  <%= f.label :email, "Email: " %>
+  <%= f.text_field :email %> <br>
+  <%= f.label :zodiac_sign, "Zodiac Sign: " %>
+  <%= f.collection_select(:zodiac_sign_id, ZodiacSign.all, :id, :name, {}, {class: "collection-text"}) %> <br>
+  <%= f.submit submit_text, class: "submit-text" %>
+  <% end %>
+  </div>
+</body>

@@ -1,11 +1,14 @@
-<div class='header'>
-  <h1 id="main-page-title"> Zodiac Adventure </h1>
+<div class="header">
+
 </div>
 
 <body>
-  <ul>
+
+
+
+  <div class="zodiac-page-text">
     <% @zodiac_signs.each do |zodiac_sign| %>
      <%= link_to zodiac_sign.name, zodiac_sign_path(zodiac_sign)%>
     <% end %>
-  </ul>
+  </div>
 </body>

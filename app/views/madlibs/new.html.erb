@@ -1,21 +1,25 @@
-<h1>Better Understand Your Relationships</h1>
+<body class="madlib-new">
+
+
+<h1 class="mad-title">Better Understand Your Relationships</h1>
 <p>Using key words that first come to mind, we are able to generate an accurate
   prediction of any relationship issues you might have. Simply fill out the form
-below and be ready to be on your way to better relatioships for life!</p><br>
+below and be ready to be on your way to better relationships for life!</p><br>
 <%= form_tag madlibs_path, method: "POST" do %>
-  <%= label_tag :body_part, "body part:" %>
+  <%= label_tag :body_part, "Body Part:" %>
   <%= text_field_tag :body_part %> <br>
-  <%= label_tag :verb_ing, "verb:" %>
+  <%= label_tag :verb_ing, "Verb:" %>
   <%= text_field_tag :verb_ing %> <br>
-  <%= label_tag :anim, "baby animal:" %>
+  <%= label_tag :anim, "Baby Animal:" %>
   <%= text_field_tag :anim %>  <br>
-  <%= label_tag :adj, "adjective:" %>
+  <%= label_tag :adj, "Adjective:" %>
   <%= text_field_tag :adj %>  <br>
-  <%= label_tag :job, "unusual occupation:" %>
+  <%= label_tag :job, "Unusual Occupation:" %>
   <%= text_field_tag :job %>  <br>
-  <%= label_tag :adj2, "adjective:" %>
+  <%= label_tag :adj2, "Adjective:" %>
   <%= text_field_tag :adj2 %>  <br>
-  <%= label_tag :randname, "random name:" %>
+  <%= label_tag :randname, "Random Name:" %>
   <%= text_field_tag :randname %> <br>
-  <%= submit_tag %>
+  <%= submit_tag "Submit", class: "mad-submit" %>
 <% end %>
+</body>
