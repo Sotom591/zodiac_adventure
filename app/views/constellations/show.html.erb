@@ -1,5 +1,13 @@
-<h1><%= @constellation.zodiac_sign.name %></h1>
 
-<%= image_tag "#{@constellation.sky_url}" %> <br>
-<p><%= @constellation.description %></p>
-<%= link_to "Constellation HomePage", constellations_path %>
+
+
+
+
+
+  <span id="constellation-show">
+   <h1><%= @constellation.zodiac_sign.name %></h1>
+
+   <%= image_tag "#{@constellation.sky_url}" %> <br>
+   <p><%= @constellation.description %></p>
+   <%= link_to "Constellation HomePage", constellations_path %>
+ </span>

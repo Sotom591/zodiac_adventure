@@ -21,3 +21,28 @@
 	background-color: transparent;
 
 }
+
+#constellation-show {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	 background-image: url("");
+	 background-position: center;
+     background-size: 500px;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     font-family: 'Courgette', cursive;
+     background-color: #c9ddff;
+}
+
+ img{
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  p {
+  	
+   
+      text-shadow: 1px 1px 0 black, 2px 2px 0 white;
+  }
+
