@@ -13,19 +13,20 @@
  *= require_tree .
  *= require_self
  */
-header {
-    font-family: 'Courgette', cursive;
-    text-align: left;
-}
-
-a {
-  text-decoration: none;
-  font-size: 25px;
-  color: purple;
-}
-
- body {
-  text-align: center;
-  font-family: 'Courgette', cursive;
+body {
   background-color: #c9ddff;
+}
+
+p {
+  font-family: 'Courgette', cursive;
+  font-size: 22px;
+  text-align: center
+}
+
+.ui.menu .item, .ui.menu .item, .ui.menu .item,
+.ui.menu .item, .ui.menu .item, .ui.menu .item>a:not(.ui) {
+  font-family: 'Courgette', cursive;
+  font-size: 15px;
+  text-align: center;
+  color: teal;
 }
