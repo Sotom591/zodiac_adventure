@@ -1,5 +1,6 @@
 
-
+<span id="constellations-span">
 <% @constellations.each do |constellation| %> <br>
   <%= link_to constellation.zodiac_sign.name, constellation_path(constellation)%>
   <% end %>
+<span/>

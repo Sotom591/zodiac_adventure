@@ -1,14 +1,13 @@
-<div class="header">
-
-</div>
-
-<body>
 
 
 
-  <div class="zodiac-page-text">
-    <% @zodiac_signs.each do |zodiac_sign| %>
-     <%= link_to zodiac_sign.name, zodiac_sign_path(zodiac_sign)%>
-    <% end %>
-  </div>
-</body>
+
+  
+    <span id= "zodiac_index_span">
+     <% @zodiac_signs.each do |zodiac_sign| %>
+      <%= link_to zodiac_sign.name, zodiac_sign_path(zodiac_sign)%>
+     <% end %>
+    </span>
+    
+   
+ 

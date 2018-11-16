@@ -1,3 +1,23 @@
-// Place all the styles related to the Constellations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#constellations-span {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	 background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6a9b3d50749631.598ca0930ad36.jpg");
+	 background-position: center;
+     background-size: 500px;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     font-family: 'Courgette', cursive;
+     background-color: #c9ddff;
+}
+
+#constellations-span a {
+	color:white;
+	text-shadow: 1px 1px 0 white, 2px 2px 0 black;
+	background-color: transparent;
+
+}

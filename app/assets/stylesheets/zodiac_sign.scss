@@ -37,7 +37,7 @@
   
 }
 
-h2 {
+.zodiacshow {
   -webkit-text-stroke: 1px black;
    color: white;
    text-shadow:
@@ -50,8 +50,7 @@ h2 {
 }
 
 .shadow {
-   text-shadow: 1px 1px 0 black, 
-                2px 2px 0 white;
+   text-shadow: 1px 1px 0 black, 2px 2px 0 white;
 }
 
 a:link, a:visited {
@@ -66,4 +65,25 @@ a:link, a:visited {
 
 a:hover, a:active {
     background-color: black;
+}
+
+#zodiac_index_span {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6a9b3d50749631.598ca0930ad36.jpg");
+   background-position: center;
+     background-size: 500px;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     font-family: 'Courgette', cursive;
+     background-color: #c9ddff;
+}
+
+#zodiac_index_span a {
+  color:white;
+  text-shadow: 1px 1px 0 white, 2px 2px 0 black;
+  background-color: transparent;
+
 }
