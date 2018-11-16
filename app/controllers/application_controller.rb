@@ -24,7 +24,7 @@ helper_method :get_current_user, :find_current_user, :current_user
   end
 
   def authorized
-      redirect_to login_path unless get_current_user
+      redirect_to login_path unless logged_in?
     end
 
     def authorized_for_user(user)
@@ -36,6 +36,6 @@ helper_method :get_current_user, :find_current_user, :current_user
     end
 
   def bad_route_redirect
-    redirect_to login_path
+    redirect_to zodiac_signs_path
   end
 end
