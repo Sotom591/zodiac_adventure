@@ -13,7 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
+body {
+  background-color: #c9ddff;
+}
 
 p {
   font-family: 'Courgette', cursive;
