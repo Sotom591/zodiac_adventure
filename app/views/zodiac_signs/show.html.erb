@@ -1,15 +1,42 @@
 
-<%= image_tag "#{@zodiac_sign.symbol_url}" %>
+
 <div>
+ <ul class= "flex-container column">
+  <%= image_tag "#{@zodiac_sign.symbol_url}" %>
   <h2> Your Strengths: </h2>
-  <h3> <%= @zodiac_sign.strengths %> </h3>
-  <h2> Your Weaknesses: </h2>
-  <h3> <%= @zodiac_sign.weaknesses %> </h3>
-  <h2> Match Up With: </h2>
-  <h3> <%= @zodiac_sign.compatible_with %> </h3>
-  <h2> Maybe You Should Avoid: </h2>
-  <h3> <%= @zodiac_sign.not_compatible %> </h3>
+  <li class="flex-item">
+  	<h3 class= "shadow"> <%= @zodiac_sign.strengths %> </h3>
+  </li>
+
+  <li class="flex-item">
+  	<h2> Your Weaknesses: </h2>
+  </li>
+
+  <li class="flex-item">
+  	<h3 class= "shadow"> <%= @zodiac_sign.weaknesses %> </h3>
+  </li>
+
+  <li class="flex-item">
+  	<h2> Match Up With: </h2>
+  </li>
+
+  <li class="flex-item">
+  	<h3 class="shadow"> <%= @zodiac_sign.compatible_with %> </h3>
+  </li>
+
+  <li class="flex-item">
+  	<h2> Maybe You Should Avoid: </h2>
+  </li>
+
+  <li class="flex-item">
+  	<h3 class="shadow"> <%= @zodiac_sign.not_compatible %> </h3>
+  </li>
+
+  <%= link_to 'Zodiac Index Page', zodiac_signs_path %>
+
+
+ </ul>
   
 </div>
 
-<%= link_to 'Zodiac Index Page', zodiac_signs_path %>
+
