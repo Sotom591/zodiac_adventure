@@ -8,30 +8,24 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-
-
-    <div>
-      <ul>
-
-
-        <div class="ui menu">
-  <a class="item" href="/">Home</a>
-  <div class="right menu">
-    <a class="item" href="/constellations">Constellations</a>
-    <a class="item" href="/madlibs/new">Predictions</a>
-    <% if session[:user_id] %>
-    <%= link_to "Account", user_path(session[:user_id]), {class: "item"} %>
-    <%= link_to "Logout", logout_path, {method: "DELETE", class: "item"} %>
-    <% else %>
-    <%= link_to "Login", login_path, {class: "item"}%>
-    <% end %>
-  </div>
-</div>
-
   </head>
 
   <body>
 
+    <div class="ui inverted six item menu">
+        <a class="active item" href="/">Home</a>
+        <a class="active item" href="/constellations">Constellations</a>
+        <a class="active item" href="/madlibs/new">Predictions</a>
+        <a class="active item" href="/zodiac_signs">Zodiac Signs</a>
+
+        <% if session[:user_id] %>
+        <%= link_to "Account", user_path(session[:user_id]), {class: "active item"} %>
+        <%= link_to "Logout", logout_path, {method: "DELETE", class: "active item"} %>
+        <% else %>
+        <%= link_to "Login", login_path, {class: "active item"}%>
+        <% end %>
+
+  </div>
 
     <%= yield %>
   </body>
