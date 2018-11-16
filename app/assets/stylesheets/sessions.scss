@@ -1,35 +1,3 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.main-page-title {
-  color: #ffe8fe;
-  font-family: 'Courgette', cursive;
-  font-size: 50px;
-  text-align: right;
-  position: relative;
-  top: 20px;
-	left: -300px;
-}
-.subtitle {
-  color: teal;
-  font-family: 'Courgette', cursive;
-  font-size: 20px;
-  text-align: right;
-  position: relative;
-  top: 50px;
-  left: -200px;
-
-}
-
-.main-page-body{
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6a9b3d50749631.598ca0930ad36.jpg");
-  background-position: center;
-  background-size: 500px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Courgette', cursive;
-  background-color: #c9ddff;
-}
-.login-form{
-  align: left;
-}
