@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+
 
 <div class="error"> <%= flash.notice %></div>
 
 
-    <div>
-        <head>
 
-          <h1 class="main-page-title">Zodiac Adventures</h1>
-          <h2 class="subtitle">Journey through the stars to better understand <br> yourself and your relationships</h2>
-        </head>
-    </div>
-<br><br><br><br><br>
   <div>
     <body class="main-page-body">
+      <h1 class="main-page-title">Zodiac Adventures</h1>
+      <h2 class="subtitle">Journey through the stars to better understand <br> yourself and your relationships</h2>
+
       <div class="column login-form">
         <%= form_tag "/login", class: "login-form" do %>
         <%= label :user_name, "Username: " %>

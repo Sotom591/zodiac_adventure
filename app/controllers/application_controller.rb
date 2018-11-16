@@ -36,6 +36,6 @@ helper_method :get_current_user, :find_current_user, :current_user
     end
 
   def bad_route_redirect
-    redirect_to login_path
+    redirect_to zodiac_signs_path
   end
 end
