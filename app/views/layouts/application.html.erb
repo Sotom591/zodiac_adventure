@@ -10,6 +10,7 @@
 
   </head>
 
+
   <body>
 
 
@@ -19,6 +20,7 @@
         <a class="active item" href="/constellations">Constellations</a>
         <a class="active item" href="/madlibs/new">Predictions</a>
         <a class="active item" href="/zodiac_signs">Zodiac Signs</a>
+
 
         <% if session[:user_id] %>
         <%= link_to "Account", user_path(session[:user_id]), {class: "active item"} %>
